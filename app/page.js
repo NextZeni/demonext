@@ -1,18 +1,21 @@
 import Head from "next/head";
 
 const Home = () => {
-  const imageUrl = "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"; // direct clean image link
+  const imageUrl = "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=630"; // Clean, optimized image
 
   return (
     <>
       <Head>
         <title>My First Blog Post</title>
         <meta name="description" content="A simple blog about productivity." />
+        <link rel="icon" href="/favicon.ico" />
 
         {/* Open Graph meta tags */}
         <meta property="og:title" content="How to Stay Productive at Home" />
         <meta property="og:description" content="Tips to stay focused while working remotely." />
         <meta property="og:image" content={imageUrl} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:url" content="https://demonext-tan.vercel.app/" />
         <meta property="og:type" content="website" />
 
